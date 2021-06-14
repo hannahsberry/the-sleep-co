@@ -5,6 +5,7 @@
 }
 
 /* Image Style */
+
 .bg-image {
     background-image: url('/images/the-sleep-co-1.jpg');
     background-size: cover;
@@ -75,7 +76,6 @@ a:hover {
     color: rgb(120,120,125);
     line-height: 1;
 }
-
 
 .font-weight-light { font-weight: 200; }
 .font-weight-normal { font-weight: normal; }
