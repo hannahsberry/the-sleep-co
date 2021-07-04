@@ -1,46 +1,96 @@
 * {
-    padding:0;
-    margin:0;
-    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-/* Image Style */
+/*------------------------------UNIVERSAL STYLES----------------*/
 
-.bg-image {
-    background-image: url('/images/the-sleep-co-1.jpg');
-    background-size: cover;
-    min-height: 10rem;
-}
+/* Padding Utility Classes */ 
+.padded-sm { padding: 2.5%; }
+.padded    { padding: 5%;   }
+.padded-lg { padding: 10%;  }
 
-.landscape { padding-bottom: 65%; }
-.portrait { padding-bottom: 125%; }
-.square { padding-bottom: 100%; }
+.padded-05 { padding: 0.5rem; }
+.padded-1  { padding: 1rem; }
+.padded-2  { padding: 2rem; }
 
-/* Universal Styles Utility Classes */
+.padded-t  { padding-top: 5%; }
+.padded-b  { padding-bottom: 5%; }
+.padded-l  { padding-left: 5%; }
+.padded-r  { padding-bottom: 5%; }
+
+.padded-tb  { padding-top: 5%; padding-bottom: 5%; }
+.padded-lr  { padding-left: 5%; padding-right: 5%; }
+
+.padded-t-1 { padding-top: 1rem; }
+.padded-b-1 { padding-bottom: 1rem; }
+.padded-l-1 { padding-left: 1rem; }
+.padded-r-1 { padding-bottom: 1rem; }
+
+.padded-t-2 { padding-top: 2rem; }
+.padded-b-2 { padding-bottom: 2rem; }
+.padded-l-2 { padding-left: 2rem; }
+.padded-r-2 { padding-bottom: 2rem; }
+
+.padded-t-0 { padding-top: 0; }
+.padded-b-0 { padding-bottom: 0; }
+.padded-l-0 { padding-left: 0; }
+.padded-r-0 { padding-bottom: 0; }
+
+/* Margin Utility Classes */ 
+
+.margin-t { margin-top: 5%; }
+.margin-b { margin-bottom: 5%; }
+.margin-l { margin-left: 5%; }
+.margin-r { margin-right: 5%; }
+
+.margin-t-1 { margin-top: 1rem; }
+.margin-b-1 { margin-bottom: 1rem; }
+.margin-l-1 { margin-left: 1rem; }
+.margin-r-1 { margin-right: 1rem; }
+
+.margin-t-2 { margin-top: 2rem; }
+.margin-b-2 { margin-bottom: 2rem; }
+.margin-l-2 { margin-left: 2rem; }
+.margin-r-2 { margin-right: 2rem; }
+
+.margin-t-0 { margin-top: 0; }
+.margin-b-0 { margin-bottom: 0; }
+.margin-l-0 { margin-left: 0; }
+.margin-r-0 { margin-right: 0; }
+
+.margin-tb { margin-top: 5%; margin-bottom: 5%; }
+.margin-lr { margin-left: 5%; margin-right: 5%; }
+
+/* -------------------------- Typography Styles --------------------*/
+
+.text-left    { text-align: left; }
+.text-right   { text-align: right; }
+.text-center  { text-align: center; }
 
 body {
-    font-family: 'catamaran', sans-serif;
-    color: #192b37;
+  font-family: "Arial", sans-serif;  /* Add your font here */ 
 }
 
-.padded { padding: 5%; }
-.padded-sm { padding: 1rem; }
-.padded-lg { padding: 10%; }
-
-.bg-dark { 
-    background-color: #192b37; 
-    color: white; 
+h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  margin-bottom: 1.2rem;
 }
 
-.bg-featured {
-    background-color: #f4b525;
+p {
+  line-height: 1.4; 
+  margin-bottom: 1rem;
 }
 
-.bg-light {
-    background-color: #e3ecf2;
+h2:last-child, 
+h3:last-child, 
+h4:last-child, 
+h5:last-child, 
+h6:last-child, 
+p:last-child {
+	margin-bottom: 0;
 }
-
-/* Typography Styles */
 
 h2, h3, h4, h5, h6 {
     margin-bottom: 1rem;
@@ -74,14 +124,6 @@ a:hover {
     color: #ffbe00;
 }
 
-.featured-text { color: #ffbe00; }
-.white-text { color: white; }
-.small-text { font-size: 1.5rem; }
-.medium-text {
-    font-size: 2rem;
-    line-height: 1.1;}
-.big-text { font-size: 5rem; }
-
 .subtitle { 
     font-size: 1.2rem;
     color: rgb(120,120,125) 
@@ -98,9 +140,47 @@ a:hover {
 .font-weight-normal { font-weight: normal; }
 .font-weight-bold { font-weight: 800; }
 
-.text-left { text-align: left; }
-.text-center { text-align: center; }
-.text-right { text-align: right; }
+.featured-text { color: #ffbe00; }
+.white-text { color: white; }
+
+.small-text { font-size: 1.5rem; }
+.medium-text {
+    font-size: 2rem;
+    line-height: 1.1;}
+.big-text { font-size: 5rem; }
+
+/* ---------------------- Background & Image Styles ----------------------*/
+
+/*  Background Images  */
+
+.bg-dark { 
+    background-color: rgb(60,60,65); 
+    color: white;
+}
+  
+.bg-featured { background-color: lightblue; }
+.bg-light { background-color: rgb(245,245,245); }
+
+.bg-bed { background-image: url('Images/the-sleep-co-4.jpg'); }
+.bg-pug { 
+    background-image: url('Images/the-sleep-co-1.jpg');
+    background-position: 50% 35%;
+}
+
+/* Images */
+
+.bg-image {
+    background-color: grey; /* Set a fall-back color while images are loading */ 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-image: url('/images/the-sleep-co-1.jpg');
+    min-height: 10rem;
+}
+
+.landscape { padding-bottom: 65%; }
+.portrait { padding-bottom: 125%; }
+.square { padding-bottom: 100%; }
 
 .tall-50 { min-height: 50vh; }
 .tall-60 { min-height: 60vh; }
@@ -109,12 +189,52 @@ a:hover {
 .tall-90 { min-height: 90vh; }
 .tall-100 { min-height: 100vh; }
 
+.bg-dark { 
+    background-color: #192b37; 
+    color: white; 
+}
+
+.bg-featured {
+    background-color: #f4b525;
+}
+
+.bg-light {
+    background-color: #e3ecf2;
+}
+
+
+/* Aspect Ratios with percentage unit are only effective if the element (the <div>) is inside a parent container or column, it can't be applied to the column itself. */
+  .landscape     { padding-bottom: 66%:  }
+  .portrait-tall { padding-bottom: 175%; }
+  .portrait      { padding-bottom: 125%; }
+  .square        { padding-bottom: 100%; }
+  
+/* Background Position */
+  .bg-pos-t { background-position: top; }
+  .bg-pos-b { background-position: bottom; }
+  .bg-pos-l { background-position: left; }
+  .bg-pos-r { background-position: right; }
+
+
+/* Universal Styles Utility Classes */
+
+body {
+    font-family: 'catamaran', sans-serif;
+    color: #192b37;
+}
+
+.padded { padding: 5%; }
+.padded-sm { padding: 1rem; }
+.padded-lg { padding: 10%; }
+
+
 /*  Header  & Footer Styles  */
 
 header {
     background-image: url('Images/the-sleep-co-3.jpg');
     background-size: cover;
     background-position: center;
+    padding: 1% 5%;
 }
 
 header h3 {
@@ -124,14 +244,6 @@ header h3 {
 
 footer a {
     border: none;
-}
-
-/*  Background Images  */
-
-.bg-bed { background-image: url('Images/the-sleep-co-4.jpg'); }
-.bg-pug { 
-    background-image: url('Images/the-sleep-co-1.jpg');
-    background-position: 50% 35%;
 }
 
 /*  Icon Grid */
