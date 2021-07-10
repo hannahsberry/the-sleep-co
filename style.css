@@ -161,7 +161,10 @@ a:hover {
 .bg-featured { background-color: lightblue; }
 .bg-light { background-color: rgb(245,245,245); }
 
-.bg-bed { background-image: url('Images/the-sleep-co-4.jpg'); }
+.bg-bed { 
+    background-image: url('Images/the-sleep-co-4.jpg');
+}
+
 .bg-pug { 
     background-image: url('Images/the-sleep-co-1.jpg');
     background-position: 50% 35%;
@@ -234,7 +237,7 @@ header {
     background-image: url('Images/the-sleep-co-3.jpg');
     background-size: cover;
     background-position: center;
-    padding: 1% 5%;
+    padding: 2s% 5%;
 }
 
 header h3 {
@@ -244,6 +247,16 @@ header h3 {
 
 footer a {
     border: none;
+}
+
+nav a {
+    padding: 0.5rem;
+    display: inline-block;
+    border: none;
+}
+
+.logo h2 {
+    margin-bottom: 0;
 }
 
 /*  Icon Grid */
@@ -258,4 +271,30 @@ footer a {
 .bg-pillow {
     background-image: url('Images/the-sleep-co-2.jpg');
     background-position: 50% 57%;
+}
+
+input, textarea {
+    width: 100%;
+    display: block;
+    margin-bottom: 0.3rem;
+    padding: 0.5rem;
+    font-family: inherit;
+    font-size: 0.9rem;
+}
+
+.button {
+    padding: 0.5rem 2rem;
+    background-color: #ffbe00;
+    appearance: none;
+    border: 2px solid #ffbe00;
+    color: inherit;
+    border: 2px solid transparent;
+    /* outline: none; */
+    margin-top: 0.3rem;
+}
+
+input:focus,
+textarea:focus {
+    border: 2px solid #ffbe00;
+    outline: none;
 }

@@ -26,21 +26,22 @@
 <!--- HEADER -->
 <header class="grid text-center tall-60">
        
-    <div class="header-nav col-12 grid"> 
-        <div class="col-4">
+    <div class="header-nav col-12-top grid"> 
+        <div class="col-4-middle">
             <a href="/index.html" class="logo">
                 <h2> The Sleep Co </h2>
             </a>
-    </div>  
+        </div>
     
-    <nav class="col-8 text-right">
-        <a href="/index.html"> Home </a>
-        <a href="/about.html"> About </a>
-        <a href="/products.html"> Products </a>
-        <a href="/contact.html"> Contact </a>
-    </nav>
+        <nav class="col-8-middle text-right">
+            <a href="/index.html"> Home </a>
+            <a href="/about.html"> About </a>
+            <a href="/products.html"> Products </a>
+            <a href="/contact.html"> Contact </a>
+        </nav>
+    </div>
 
-    <div class=col-12-middle>
+    <div class=col-12>
         <h3 class="bold editable">
             <span class="featured-text"> we're the </span> best
         </h3>
@@ -53,14 +54,20 @@
 
 <!--- contact form --->
 
-<section class="grid bg-dark light-text">
+<section class="grid bg-dark light-text padded">
     <div class="col-6 padded">
         <h2> let's <span class="featured-text"> connect </span> </h2>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis optio, nostrum dolorum molestiae doloremque nulla id esse ea, quam temporibus culpa corporis. Incidunt vero tenetur pariatur architecto officia, fugiat labore.</p>
     </div>
-    
     <div class="col-6 padded"> 
-        <h2> contact form here </h2>
+
+        <form>
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="email" name="replyto" placeholder="Email">
+            <textarea name="message" placeholder="Tell Us How We Can Help.."></textarea>
+            <button class="button" type="submit"> SUBMIT </button>
+        </form>
+
     </div>
 </section>
 
