@@ -236,8 +236,10 @@ header {
     background-image: url('Images/the-sleep-co-3.jpg');
     background-size: cover;
     background-position: center;
-    padding: 2s% 5%;
 }
+
+.header-nav { padding: 1%; }
+
 
 header h3 {
     font-size: 5rem;
