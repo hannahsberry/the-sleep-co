@@ -50,10 +50,12 @@ gallery:
       {% for item in page.gallery %}
       <div class="{{item.column-size}}">
         <div class="bg-image {{item.aspect-ratio}}"
-            style="background_image: url('{{item.background-image}}');">
+            style="background-image: url('{{item.background_image}}');">
         </div>
       </div>
       {% endfor %}
 
   </div>
 </section>
+
+{% include testimonial.html%}
