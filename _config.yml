@@ -1,0 +1,16 @@
+_select_data:
+  aspect-ratios:
+  - square
+  - portrait
+  - portrait-tall
+  - landscape
+  - landscape-wide
+
+  column-sizes:
+    col-6: 50%
+    col-12: 100%
+    col-4: 33%
+    col-3: 25%
+    col-6_sm-12: 50% desktop, stacked mobile
+    col-4_sm-12: 50% desktop, stacked mobile
+    col-3_sm-12: 50% desktop, stacked mobile
