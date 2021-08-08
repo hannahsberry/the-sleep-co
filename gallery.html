@@ -45,6 +45,7 @@ gallery:
 
 <!--- GALLERY -->
 <section class="padded">
+
   <div class="gallery grid">
 
       {% for item in page.gallery %}
@@ -54,8 +55,21 @@ gallery:
         </div>
       </div>
       {% endfor %}
-
   </div>
 </section>
 
-{% include testimonial.html%}
+  <!--- POP GALLERY -->
+
+<section class="padded">
+
+  <div class="gallery grid" id="lightgallery">
+  
+       {% for item in page.gallery %}
+      <a class="{{item.column-size}}" href="{{item.background_image}}">
+        <div class="bg-image {{item.aspect-ratio}}"
+           style="background-image: url('{{item.background_image}}');">
+        </div>
+      </a>
+       {% endfor %}
+  </div>
+</section>

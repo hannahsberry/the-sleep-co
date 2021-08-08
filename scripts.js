@@ -7,3 +7,10 @@ $( document ).ready(function() {
         $(".mobile-menu").fadeToggle();
 
 });
+
+
+lightGallery(document.getElementById('lightgallery'), {
+    speed: 500,
+    download: false
+    
+});
